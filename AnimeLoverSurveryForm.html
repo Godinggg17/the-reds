@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Anime Lover Survey Form</h1>
+    <p id="description">5 minutes quick survey</p>
+    <form id="survey-form">
+    <Div class="division">
+      <fieldset class="fieldset">
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name"required /></label>
+        <label id="nickname-label">Nickname<Input id="nickname" type="text" placeholder="Enter your nickname"/></label>
+        <label id="number-label">Age<Input id="number" type="number" min="13" Max="120" required placeholder="Select your age"/></label>
+        <label id="email-label">Email<Input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label>Gender
+        <select id="dropdown">
+          <option Value="">Select your Gender</option>
+          <option Value="1">Male</option>
+          <option Value="2">Female</option>
+          </Select> 
+       </fieldset>
+      <fieldset class="fieldset">
+      <legend>What is your favourite genre watching anime?</legend>   
+        <input type="checkbox" name="genre" value="Romance"/>Romance
+        <input type="checkbox" name="genre" value="Shonen"/>Shonen
+        <input type="checkbox" name="genre" value="Shoujo"/>Shoujo
+        <input type="checkbox" name="genre" value="Seinen"/>Seinen
+        <input type="checkbox" name="genre" value="Isekai"/>Isekai
+        <input type="checkbox" name="genre" value="Harem"/>Harem
+        <input type="checkbox" name="genre" value="Slice of Life"/>Slice of Life</fieldset>
+      <fieldset class="fieldset">
+       <legend>How many hours of anime per day?</legend>
+        <label><input type="radio" name="time" value="1 hour"/>1 hour</label>
+        <label><input type="radio" name="time" value="2 hours" checked />2 hours</label>
+        <label><input type="radio" name="time" value="3 hours" />3 hours</label>
+        <label><input type="radio" name="time" value="Extreme hours">Extreme hours</label>
+      </fieldset>
+      <fieldset class="fieldset"><legend>Name your favourite anime and why?</legend>
+      <textarea id="reasons" rows="5" cols="67" placeholder="Write your reasons here..."></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    </div>
+  </body>
+</html>
